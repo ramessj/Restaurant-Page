@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("let a = 1;\r\nconsole.log(\"Hola\")\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("let container = document.getElementById(\"container\");\r\n\r\n\r\n\r\n\r\n\r\nlet header = document.createElement('div');\r\nheader.classList.add('header');\r\n\r\nlet headerHome =document.createElement('div');\r\nheaderHome.classList.add('headerHome');\r\nheaderHome.classList.add('headerSelected');\r\nheaderHome.innerHTML = '<p>Inicio</p>'\r\nheader.appendChild(headerHome);\r\n\r\nlet headerMenu = document.createElement('div');\r\nheaderMenu.classList.add('headerMenu');\r\nheaderMenu.innerHTML = '<p>Menu<p>'\r\nheader.appendChild(headerMenu);\r\n\r\nlet headerAbout = document.createElement('div');\r\nheaderAbout.classList.add('headerAbout');\r\nheaderAbout.innerHTML = '<p>Sobre Nosotros</p>';\r\nheader.appendChild(headerAbout)\r\n\r\n\r\n\r\ncontainer.append(header)\r\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
 
 /***/ })
 
