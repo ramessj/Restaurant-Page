@@ -131,11 +131,11 @@ body {
 
 .contentMenu{
   background-color: #c59d5f;
-  width: 90%;
+  width: 90vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  row-gap: 2rem;
-  padding: 2rem; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ 
+ padding: .5rem;
   gap: 3rem;
   margin-top: 2rem;
   
@@ -146,12 +146,15 @@ body {
   background-color: aliceblue;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   
 }
 
 .menuImg{
   max-width: 300px;
   margin: 1rem;
+  margin-left: 2px;
+  margin-right: 2px;
   
 }
 
@@ -161,8 +164,7 @@ body {
 .footer {
   margin-top: 40px;
   color: white;
-  position: absolute;
-  bottom: 1rem;
+  padding-bottom: 1rem;
   width: 100%;
   display: flex;
   align-items: center;
