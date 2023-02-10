@@ -18,30 +18,45 @@ headerMenu.classList.add('headerMenu');
 headerMenu.innerHTML = '<p>Menú<p>'
 header.appendChild(headerMenu);
 
-let headerAbout = document.createElement('div');
-headerAbout.classList.add('headerAbout');
-headerAbout.innerHTML = '<p>Contacto</p>';
-header.appendChild(headerAbout)
+let headerContacto = document.createElement('div');
+headerContacto.classList.add('headerContacto');
+headerContacto.innerHTML = '<p>Contacto</p>';
+header.appendChild(headerContacto)
 
 
 
-container.append(header)
+container.prepend(header)
 
 
 
 
 // INDEX CONTENT
 
-let content = document.createElement('div');
-content.classList.add('content');
-content.setAttribute('id', 'content');
+let contentIndex = document.createElement('div');
+contentIndex.classList.add('contentIndex');
+contentIndex.setAttribute('id', 'contentIndex');
 
-content.innerHTML = `<p class="bienvenidos">Bienvenidos</p>
+contentIndex.innerHTML = `<p class="bienvenidos">Bienvenidos</p>
 <p class="matadero">El Matadero</p>
-<button type="button" class="buttonMenu">Ver el Menú</button>`
+<button type="button" class="buttonMenu">Ver el Menú</button>`;
 
-container.append(content)
+//container.append(contentIndex)
 
+
+
+// MENU CONTENT
+
+
+let contentMenu = document.createElement('div');
+contentMenu.classList.add('contentMenu');
+contentMenu.setAttribute('id', 'contentMenu');
+
+contentMenu.innerHTML = `<p class="bienvenidos">Bienvenidos</p>
+<p class="matadero">El Matadero</p>
+<button type="button" class="buttonMenu">Ver el Menú</button>`;
+
+
+//container.append(contentMenu)
 
 
 
