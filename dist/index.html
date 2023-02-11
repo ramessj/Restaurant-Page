@@ -19,38 +19,59 @@
       href="https://fonts.googleapis.com/css2?family=Redressed&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="container" id="container">
 
-        
-        <div class="contentMenu">
-            <div class="menuItem" id="menuItem1">
-                <img class="menuImg" src="/src/img/asado-tira.jpg" alt="Asado de Tira">
-                <p>Asado de Tira</p>
+
+      <div class="contactoContainer">
+        <p class="contactanos">Contactate con nosotros!</p>
+        <div class="contacto" id="contacto">
+          <div class="izqArriba">
+            <div class="inconoTexto">
+              <i class="fa-solid fa-location-dot iconoBlanco"></i>
+              <p>Eusebio E. Giménez 643, Mercedes, Soriano, Uruguay </p>
             </div>
-            <div class="menuItem" id="menuItem2">
-                <img class="menuImg" src="/src/img/chorizo.jpg" alt="Chorizo">
+            <div class="inconoTexto">
+              <i class="fa-solid fa-clock iconoBlanco"></i>
+              <p>Abierto todos los días de <span class="horario">20:00 a 3:00</span></p>
             </div>
-            <div class="menuItem" id="menuItem3">
-                <img class="menuImg" src="/src/img/colita-cuadril.jpg" alt="Colita de Cuadril">
+            <div class="inconoTexto">
+              <i class="fa-solid fa-phone iconoBlanco"></i>
+              <p>(4532)2201 </p>
             </div>
-            <div class="menuItem" id="menuItem4">
-                <img class="menuImg" src="/src/img/Cordero.jpg" alt="Cordero">
+            <div class="inconoTexto">
+              <i class="fa-solid fa-envelope iconoBlanco"></i>
+              <p class="horario">Escribenos!</p>              
             </div>
-            <div class="menuItem" id="menuItem5">
-                <img class="menuImg" src="/src/img/entrecote.jpg" alt="Entrecote">
-            </div>
-            <div class="menuItem" id="menuItem6">
-                <img class="menuImg" src="/src/img/pamplona.jpg" alt="Pamplona">
-            </div>
+
+            
+             <form action="#" class="formulario">
+                
+                <input class="inputContacto" type="text" id="nombre" title="Nombre" placeholder="Nombre Completo">
+                <input class="inputContacto" type="email" name="email" id="Email" placeholder="alguien@correo.com">
+                <input class="mensajelargo inputContacto" type="text" id="mensaje" title="Mensaje" placeholder="Escribe tu mensaje">
+                <input class="submitButton" type="submit">
+             </form>
+            
+
+            
+
+
+
+          </div>
+          <div class="derAbajo">
+            <div class="mapaContainer" style="width: 90%"><iframe class="mapa" title="mapa" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=gimenez%20643%20merrcedes+(EL%20MATADERO)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+          </div>
         </div>
+      </div>
        
     </div>
     
     
 
-
+    
     <script src="main.js"></script>
   </body>
 </html>
