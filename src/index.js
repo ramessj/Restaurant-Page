@@ -131,6 +131,74 @@ headerMenu.addEventListener('click', showMenu);
 
 
 
+// contacto
+
+
+let showContacto = ()=>{
+
+container.innerHTML = '';
+container.prepend(header);
+clearHeader()
+headerContacto.classList.add('headerSelected')
+
+let contentContacto = document.createElement('div');
+contentContacto.classList.add('contentContacto');
+contentContacto.setAttribute('id', 'contentContacto');
+
+contentContacto.innerHTML = `<div class="contactoContainer">
+<p class="contactanos">Contactate con nosotros!</p>
+<div class="contacto" id="contacto">
+  <div class="izqArriba">
+    <div class="inconoTexto">
+      <i class="fa-solid fa-location-dot iconoBlanco"></i>
+      <p>Eusebio E. Giménez 643, Mercedes, Soriano, Uruguay </p>
+    </div>
+    <div class="inconoTexto">
+      <i class="fa-solid fa-clock iconoBlanco"></i>
+      <p>Abierto todos los días de <span class="horario">20:00 a 3:00</span></p>
+    </div>
+    <div class="inconoTexto">
+      <i class="fa-solid fa-phone iconoBlanco"></i>
+      <p>(4532)-2201 </p>
+    </div>
+    <div class="inconoTexto">
+      <i class="fa-solid fa-envelope iconoBlanco"></i>
+      <p class="horario">ESCRIBENOS!</p>              
+    </div>
+
+    
+     <form action="#" class="formulario">
+        
+        <input class="inputContacto" type="text" id="nombre" title="Nombre" placeholder="Nombre Completo">
+        <input class="inputContacto" type="email" name="email" id="Email" placeholder="alguien@correo.com">
+        <input class="mensajelargo inputContacto" type="text" id="mensaje" title="Mensaje" placeholder="Escribe tu mensaje">
+        <input class="submitButton" type="submit">
+     </form>
+    
+
+    
+
+
+
+  </div>
+  <div class="derAbajo">
+    <div class="mapaContainer"><iframe class="mapa" title="mapa" width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=gimenez%20643%20merrcedes+(EL%20MATADERO)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+  </div>
+</div>
+</div>`;
+
+container.append(contentContacto)
+container.append(footer)
+
+}
+
+headerContacto.addEventListener('click', showContacto);
+
+
+
+
+
+
 
 
 
@@ -170,4 +238,4 @@ headerContacto.classList.remove('headerSelected')
 
 
 
-//showHome()
+showHome()

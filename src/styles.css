@@ -24,14 +24,14 @@ body {
   display: flex;
   width: 100%;
   padding-top: 1.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   align-items: center;
   color: white;
   justify-content: center;
   gap: 3em;
-  height: 100px;
+ 
   font-size: 4rem;
-  transform: scale(1);
+  
   margin-bottom: 1rem;
   border-bottom: 1px #c59d5f solid;
   font-family: "Herr Von Muellerhoff", cursive;
@@ -210,7 +210,27 @@ margin-top: 1rem;
 
 .contactanos{
   font-size: 3rem;
+  text-shadow: #c59d5f .1rem .1rem;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.contactanos::after{
+  position: absolute;
+  content: "";
+  height: 5px;
+  bottom: -15px;
+  margin: 0 auto;
+  left: -25%;
+  right: -25%;
+  width: 120%;
+  background: #c59d5f;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 
@@ -249,7 +269,13 @@ margin-top: 1rem;
 .inconoTexto{
   display: flex;
   gap: 1rem;
+
 }
+
+.inconoTexto>p{
+  text-shadow: white .02rem .02rem;
+}
+
 
 .iconoBlanco{
   color: white;
@@ -268,38 +294,73 @@ margin-top: 1rem;
 }
 
 .inputContacto{
-  height: 2rem;
+  height: 3rem;
   border: 1px rgb(255, 255, 255) solid;
   border-radius: 0.5rem;
   color: white;
   background-color: #c59d5f;
   box-shadow: black .1rem .1rem;
-  
+  position: relative;
+  padding-left: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: #000000 .1rem .1rem;
 }
 
 .inputContacto::placeholder{
-  color: white;
-  padding-left: 1rem;
+  color:rgb(74, 58, 34);
+  text-shadow: white .03rem .03rem;
   font-weight: 600;
+  font-size: 1.1rem;
   
 }
 
 
-
-
-
 .submitButton{
-  height: 2rem
+  margin-top: 1rem;
+  width: 50%;
+  
+  border-radius: .8rem;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  box-shadow: #000000 .5rem .5rem;
+
 }
 
+.submitButton:hover{
+ background-color: #c0c0c0;
+}
+
+.submitButton:active{
+  transform: translateY(5px);
+  box-shadow: #000000 .4rem .3rem;
+}
+
+
+
+
+
+
+
+
 .mensajelargo{
-  height: 3rem;
+  height: 6rem;
 }
 
 .mapa{
   padding: 1rem;
   width: 90%;
-  box-shadow: .1rem .1rem black;
+
+  
+}
+
+.mapaContainer{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 
@@ -358,6 +419,14 @@ margin-top: 1rem;
   .buttonMenu {
     font-size: 2rem;
   }
+
+
+  .contacto{
+    width: 90%;
+  }
+
+
+
 }
 
 @media (max-width: 800px) {
@@ -392,5 +461,28 @@ margin-top: 1rem;
     
   }
 
+.contactanos{
+  font-size: 1.5rem;
+}
+
+  .contacto{
+    flex-direction: column;
+    height: fit-content;
+    padding-top: 2rem;
+    
+  }
+
+
+  .izqArriba,
+  .derAbajo{
+    width: 100%;
+  }
+
+  .izqArriba{
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 10px;
+  }
 
 }
