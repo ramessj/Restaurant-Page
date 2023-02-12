@@ -144,7 +144,7 @@ let showContacto = () => {
         <input class="inputContacto" type="text" id="nombre" title="Nombre" placeholder="Nombre Completo">
         <input class="inputContacto" type="email" name="email" id="Email" placeholder="alguien@correo.com">
         <input class="mensajelargo inputContacto" type="text" id="mensaje" title="Mensaje" placeholder="Escribe tu mensaje">
-        <input class="submitButton" type="submit">
+        <button class="submitButton" type="button" id="submit">Enviar</button>
      </form>
     
 
@@ -187,3 +187,4 @@ let clearHeader = () => {
 };
 
 showHome();
+
