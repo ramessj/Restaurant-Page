@@ -1,91 +1,65 @@
 let container = document.getElementById("container");
 
+let header = document.createElement("div");
+header.classList.add("header");
 
-
-
-
-let header = document.createElement('div');
-header.classList.add('header');
-
-let headerHome =document.createElement('div');
-headerHome.classList.add('headerHome');
-headerHome.classList.add('headerSelected');
-headerHome.innerHTML = '<p>Inicio</p>'
+let headerHome = document.createElement("div");
+headerHome.classList.add("headerHome");
+headerHome.classList.add("headerSelected");
+headerHome.innerHTML = "<p>Inicio</p>";
 header.appendChild(headerHome);
 
-let headerMenu = document.createElement('div');
-headerMenu.classList.add('headerMenu');
-headerMenu.innerHTML = '<p>Menú<p>'
+let headerMenu = document.createElement("div");
+headerMenu.classList.add("headerMenu");
+headerMenu.innerHTML = `<p>Menu</p>`;
 header.appendChild(headerMenu);
 
-let headerContacto = document.createElement('div');
-headerContacto.classList.add('headerContacto');
-headerContacto.innerHTML = '<p>Contacto</p>';
-header.appendChild(headerContacto)
+let headerContacto = document.createElement("div");
+headerContacto.classList.add("headerContacto");
+headerContacto.innerHTML = "<p>Contacto</p>";
+header.appendChild(headerContacto);
 
-
-
-container.prepend(header)
-
-
-
+container.prepend(header);
 
 // INDEX CONTENT
 
-let showHome = ()=>{
- 
-  container.innerHTML = '';
+let showHome = () => {
+  container.innerHTML = "";
   container.prepend(header);
   clearHeader();
-  
- 
-headerHome.classList.add('headerSelected')
 
+  headerHome.classList.add("headerSelected");
 
+  let contentIndex = document.createElement("div");
+  contentIndex.classList.add("contentIndex");
+  contentIndex.setAttribute("id", "contentIndex");
 
-let contentIndex = document.createElement('div');
-contentIndex.classList.add('contentIndex');
-contentIndex.setAttribute('id', 'contentIndex');
-
-contentIndex.innerHTML = `<p class="bienvenidos">Bienvenidos</p>
+  contentIndex.innerHTML = `<p class="bienvenidos">Bienvenidos</p>
 <p class="matadero">El Matadero</p>
 <button type="button" class="buttonMenu" id="buttonMenuOnIndex">Ver el Menú</button>`;
 
+  container.append(contentIndex);
+  container.append(footer);
+  let buttonMenuOnIndex = document.getElementById("buttonMenuOnIndex");
+  buttonMenuOnIndex.addEventListener("click", showMenu);
+};
 
-container.append(contentIndex)
-container.append(footer)
- let buttonMenuOnIndex = document.getElementById('buttonMenuOnIndex')
- buttonMenuOnIndex.addEventListener('click', showMenu)
-
-
-
-}
-
-headerHome.addEventListener('click', showHome);
-
-
-
-
-
-
-
+headerHome.addEventListener("click", showHome);
 
 // MENU CONTENT
 
-let showMenu = ()=>{
+let showMenu = () => {
+  container.innerHTML = "";
+  container.prepend(header);
+  clearHeader();
+  headerMenu.classList.add("headerSelected");
+  
 
+  let contentMenu = document.createElement("div");
+  contentMenu.classList.add("contentMenu");
+  contentMenu.setAttribute("id", "contentMenu");
 
-container.innerHTML = '';
-container.prepend(header);
-clearHeader()
-headerMenu.classList.add('headerSelected')
-
-
-let contentMenu = document.createElement('div');
-contentMenu.classList.add('contentMenu');
-contentMenu.setAttribute('id', 'contentMenu');
-
-contentMenu.innerHTML = `<div class="contentMenu">
+  contentMenu.innerHTML = `<div class="contentMenu">
 <div class="menuItem" id="menuItem1">
     <img class="menuImg" src="/src/img/asado-tira.jpg" alt="Asado de Tira">
     <p class="menuText">Asado de Tira &bull; <span class="menuPrice">$550</span></p>
@@ -120,32 +94,25 @@ contentMenu.innerHTML = `<div class="contentMenu">
 </div>
 </div>`;
 
+  container.append(contentMenu);
+  container.append(footer);
+};
 
-container.append(contentMenu)
-container.append(footer)
-
-}
-
-headerMenu.addEventListener('click', showMenu);
-
-
-
+headerMenu.addEventListener("click", showMenu);
 
 // contacto
 
+let showContacto = () => {
+  container.innerHTML = "";
+  container.prepend(header);
+  clearHeader();
+  headerContacto.classList.add("headerSelected");
 
-let showContacto = ()=>{
+  let contentContacto = document.createElement("div");
+  contentContacto.classList.add("contentContacto");
+  contentContacto.setAttribute("id", "contentContacto");
 
-container.innerHTML = '';
-container.prepend(header);
-clearHeader()
-headerContacto.classList.add('headerSelected')
-
-let contentContacto = document.createElement('div');
-contentContacto.classList.add('contentContacto');
-contentContacto.setAttribute('id', 'contentContacto');
-
-contentContacto.innerHTML = `<div class="contactoContainer">
+  contentContacto.innerHTML = `<div class="contactoContainer">
 <p class="contactanos">Contactate con nosotros!</p>
 <div class="contacto" id="contacto">
   <div class="izqArriba">
@@ -187,26 +154,16 @@ contentContacto.innerHTML = `<div class="contactoContainer">
 </div>
 </div>`;
 
-container.append(contentContacto)
-container.append(footer)
+  container.append(contentContacto);
+  container.append(footer);
+};
 
-}
-
-headerContacto.addEventListener('click', showContacto);
-
-
-
-
-
-
-
-
-
+headerContacto.addEventListener("click", showContacto);
 
 //  FOOTER
-let footer = document.createElement('footer');
-footer.classList.add('footer');
-footer.setAttribute('id', 'footer')
+let footer = document.createElement("footer");
+footer.classList.add("footer");
+footer.setAttribute("id", "footer");
 footer.innerHTML = `<p>
   Creado por
   <a href="https://github.com/ramessj" target="blank">Ramiro Quesada</a>
@@ -216,26 +173,12 @@ footer.innerHTML = `<p>
 
 container.append(footer);
 
-
-
-
-
 // funcion para eliminar la clase de todos los elementos del header
 
-let clearHeader = ()=>{
+let clearHeader = () => {
+  headerHome.classList.remove("headerSelected");
+  headerMenu.classList.remove("headerSelected");
+  headerContacto.classList.remove("headerSelected");
+};
 
-headerHome.classList.remove('headerSelected');
-headerMenu.classList.remove('headerSelected')
-headerContacto.classList.remove('headerSelected')
-
-
-
-
-}
-
-
-
-
-
-
-showHome()
+showHome();
