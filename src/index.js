@@ -68,7 +68,7 @@ let showMenu = () => {
     <p class="menuText">Asado de Tira &bull; <span class="menuPrice">$550</span></p>
 </div>
 <div class="menuItem" id="menuItem2">
-    <img class="menuImg" src="/src/img/chorizo.jpg" alt="Chorizo">
+    <img class="menuImg" src="./src/img/chorizo.jpg" alt="Chorizo">
     <p class="menuText">Chorizo &bull; <span class="menuPrice">$350</span></p>
 </div>
 <div class="menuItem" id="menuItem3">
