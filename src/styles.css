@@ -16,8 +16,6 @@ body {
   align-items: center;
 }
 
-
-
 /* HEADER*/
 
 .header {
@@ -29,14 +27,12 @@ body {
   color: white;
   justify-content: center;
   gap: 3em;
- 
+
   font-size: 4rem;
-  
+
   margin-bottom: 1rem;
   border-bottom: 1px #c59d5f solid;
   font-family: "Herr Von Muellerhoff", cursive;
-  
-  
 }
 
 .headerSelected > p {
@@ -65,10 +61,6 @@ body {
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
 }
-
-
-
-
 
 /* CONTENT INDEX*/
 
@@ -146,18 +138,15 @@ body {
   width: 90vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-border-bottom: #c59d5f 1px solid;
-  
+  border-bottom: #c59d5f 1px solid;
+
   gap: 3rem;
-  -webkit-user-select: none; /* Safari */        
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* IE10+/Edge */
-user-select: none; /* Standard */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 
-margin-top: 1rem;
-
-  
-  
+  margin-top: 1rem;
 }
 
 .menuItem {
@@ -180,8 +169,6 @@ margin-top: 1rem;
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
-  user-drag: none;
-  
 }
 
 .menuText {
@@ -196,15 +183,11 @@ margin-top: 1rem;
 
 .menuPrice {
   color: #c59d5f;
-
 }
-
-
 
 /* CONTACTO */
 
-
-.contactoContainer{
+.contactoContainer {
   color: white;
   align-items: center;
   display: flex;
@@ -212,15 +195,16 @@ margin-top: 1rem;
   padding-top: 1rem;
 }
 
-.contactanos{
+.contactanos {
   font-size: 3rem;
-  text-shadow: #c59d5f .1rem .1rem;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: #c59d5f 0.1rem 0.1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   position: relative;
   margin-bottom: 2rem;
 }
 
-.contactanos::after{
+.contactanos::after {
   position: absolute;
   content: "";
   height: 5px;
@@ -237,21 +221,20 @@ margin-top: 1rem;
   transition: 0.5s;
 }
 
-
-.contacto{
+.contacto {
   background-color: #c59d5f;
   width: 1200px;
-  height: 600px;
+  height: 100%;
   margin-top: 2rem;
   border-radius: 1rem;
   display: flex;
   justify-content: space-between;
   color: #000000;
   font-size: 1.3rem;
-  
+  padding: 1rem;
 }
 
-.izqArriba{
+.izqArriba {
   width: 50%;
   border-right: black 1px solid;
   display: flex;
@@ -261,119 +244,95 @@ margin-top: 1rem;
   gap: 2rem;
 }
 
-.derAbajo{
+.derAbajo {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
-
 }
 
-
-.inconoTexto{
+.inconoTexto {
   display: flex;
   gap: 1rem;
-
 }
 
-.inconoTexto>p{
-  text-shadow: white .02rem .02rem;
+.inconoTexto > p {
+  text-shadow: white 0.02rem 0.02rem;
 }
 
-
-.iconoBlanco{
+.iconoBlanco {
   color: white;
-  text-shadow: #000000 .1rem .1rem;
+  text-shadow: #000000 0.1rem 0.1rem;
 }
 
-.horario{
+.horario {
   font-weight: 600;
 }
 
-.formulario{
+.formulario {
   display: flex;
   flex-direction: column;
   width: 300px;
   gap: 1rem;
 }
 
-.inputContacto{
+.inputContacto {
   height: 3rem;
   border: 1px rgb(255, 255, 255) solid;
   border-radius: 0.5rem;
   color: white;
   background-color: #c59d5f;
-  box-shadow: black .1rem .1rem;
+  box-shadow: black 0.1rem 0.1rem;
   position: relative;
   padding-left: 20px;
   font-size: 1.2rem;
   font-weight: 600;
-  font-family: 'Courier New', Courier, monospace;
-  text-shadow: #000000 .1rem .1rem;
+  font-family: "Courier New", Courier, monospace;
+  text-shadow: #000000 0.1rem 0.1rem;
 }
 
-.inputContacto::placeholder{
-  color:rgb(74, 58, 34);
-  text-shadow: white .03rem .03rem;
+.inputContacto::placeholder {
+  color: rgb(74, 58, 34);
+  text-shadow: white 0.03rem 0.03rem;
   font-weight: 600;
   font-size: 1.1rem;
-  
 }
 
-
-.submitButton{
+.submitButton {
   margin-top: 1rem;
   width: 50%;
-  
-  border-radius: .8rem;
+
+  border-radius: 0.8rem;
   font-size: 2rem;
   padding: 1rem 2rem;
   cursor: pointer;
-  box-shadow: #000000 .5rem .5rem;
-
+  box-shadow: #000000 0.5rem 0.5rem;
 }
 
-.submitButton:hover{
- background-color: #c0c0c0;
+.submitButton:hover {
+  background-color: #c0c0c0;
 }
 
-.submitButton:active{
+.submitButton:active {
   transform: translateY(5px);
-  box-shadow: #000000 .4rem .3rem;
+  box-shadow: #000000 0.4rem 0.3rem;
 }
 
-
-
-
-
-
-
-
-.mensajelargo{
+.mensajelargo {
   height: 6rem;
 }
 
-.mapa{
+.mapa {
   padding: 1rem;
   width: 90%;
-
-  
 }
 
-.mapaContainer{
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
+.mapaContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-
-
-
-
-
-
-
 
 /* FOOTER */
 .footer {
@@ -402,11 +361,10 @@ justify-content: center;
   transition: font-size 0.3s ease-out;
 }
 
-.footer>p>a:hover{
+.footer > p > a:hover {
   font-size: 1.5rem;
   transition: font-size 0.3s ease-out;
 }
-
 
 @media (max-width: 1200px) {
   .header {
@@ -424,13 +382,10 @@ justify-content: center;
     font-size: 2rem;
   }
 
-
-  .contacto{
+  .contacto {
     width: 90%;
+    padding-top: 1rem;
   }
-
-
-
 }
 
 @media (max-width: 800px) {
@@ -456,37 +411,35 @@ justify-content: center;
     padding: 1rem 2rem;
   }
 
-  .buttonMenu:hover{
+  .buttonMenu:hover {
     font-size: 1.6rem;
   }
 
-  .footer>p>a:hover{
+  .footer > p > a:hover {
     font-size: 1.3rem;
-    
   }
 
-.contactanos{
-  font-size: 1.5rem;
-}
+  .contactanos {
+    font-size: 1.5rem;
+  }
 
-  .contacto{
+  .contacto {
     flex-direction: column;
-    height: fit-content;
-    padding-top: 2rem;
-    
+    height: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
-
 
   .izqArriba,
-  .derAbajo{
+  .derAbajo {
     width: 100%;
   }
 
-  .izqArriba{
+  .izqArriba {
     margin-bottom: 2rem;
     font-size: 1.1rem;
-    margin: 0;
-    padding: 10px;
+    
+    padding: 1.3rem;
+    
   }
-
 }
