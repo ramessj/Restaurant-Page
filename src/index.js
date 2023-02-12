@@ -1,3 +1,6 @@
+import "./styles.css";
+import "./reset.css";
+
 let container = document.getElementById("container");
 
 let header = document.createElement("div");
@@ -61,7 +64,7 @@ let showMenu = () => {
 
   contentMenu.innerHTML = `<div class="contentMenu">
 <div class="menuItem" id="menuItem1">
-    <img class="menuImg" src="/src/img/asado-tira.jpg" alt="Asado de Tira">
+    <img class="menuImg" src="../src/img/asado-tira.jpg" alt="Asado de Tira">
     <p class="menuText">Asado de Tira &bull; <span class="menuPrice">$550</span></p>
 </div>
 <div class="menuItem" id="menuItem2">
